@@ -136,7 +136,7 @@ if(isinstance(transactionsList,list) and len(transactionsList)>0\
         str(len(cities.get(cityName).get('uniqueCustIds'))),str(len(cities.get(cityName).get('uniqueTransIds')))]
         rowCount +=1 # increment the index for the next data 
     #changing string values to int
-    #pd.to_numeric(cityData)
+    pd.to_numeric(cityData)
 
     #producing summaries
     transactionsData.to_csv('TRANSACTIONS.csv', sep=',', encoding='utf-8',index=False)
