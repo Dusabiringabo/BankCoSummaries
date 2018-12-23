@@ -13,7 +13,8 @@ Assumptions
 
 •	All transactions from the API are unique; no duplicates.
 
-Run the script
+To run the script
+
 This script is run as other python scripts; the user needs to go in the folder where the file is stored and type the following in the terminal/command prompt: python bankCoSummaries.py. Once the file is successfully executed, the two files summary will be automatically created in the same folder.
 
 Note
