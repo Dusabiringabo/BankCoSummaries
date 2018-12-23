@@ -10,10 +10,12 @@ Required libraries
 For the script to run effectively, a user must install, through the command line, the following libraries by using ‘pip install’ followed by library name among pandas, numpy, geopy, and geocoder. Example: pip install pandas. In addition to that, python 3 must be installed.
 
 Assumptions
+
 •	All transactions from the API are unique; no duplicates.
 
 Run the script
 This script is run as other python scripts; the user needs to go in the folder where the file is stored and type the following in the terminal/command prompt: python bankCoSummaries.py. Once the file is successfully executed, the two files summary will be automatically created in the same folder.
 
 Note
+
 •	Opening the resulting csv files in Microsoft excel may change the date format. The actual content can be viewed by opening with other file openers such as Notepad, Libre Office, …
