@@ -14,9 +14,8 @@ import pandas as pd
 #import for missing value (np.nan) functionality
 import numpy as np
 
-
-'''this function 'getAllTransactions()' will return a dictionay of customer id as a key and customer name as value
-in case the request to the API was a success, otherwise it will return None'''
+'''this function 'getAllTransactions()' will return a list of transactions, where each transaction is a dictionary 
+with different value, in case the request to the API was successful, otherwise it will return None'''
 def getAllTransactions():
     url = 'https://df-alpha.bk.rw/interview01/transactions'
     response = requests.get(url)
@@ -25,8 +24,8 @@ def getAllTransactions():
     else:
         return None
 
-'''this function 'getAllCustomers()' will return a list of transactions, where each transaction is a dictionary 
-with different value, in case the request to the API was successful, otherwise it will return None'''
+'''this function 'getAllCustomers()' will return a dictionay of customer id as a key and customer name as value
+in case the request to the API was a success, otherwise it will return None'''
 def getAllCustomers():
     #initialize a dictionary to store customer's id & name for quick access
     customersInfo = {}
